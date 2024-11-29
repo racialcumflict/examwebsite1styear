@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legaste Website</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    
+</head>
+<body id="body">
+    <script src="main.js"></script>
+    
+    <div id="loginPage" class="loginPage">
+        <h2 style="font-size: 50px;" id="animate-charcter">Sign In</h2>
+        <input type="text" id="username" class="username" placeholder="Username" required><br>
+        <input type="password" id="password" class="password" placeholder="Password" required><br><br>
+
+        <button onclick="login()" id="login">Login</button><br><br>
+        <button onclick="showCreateUser()" id="create">Create User</button>
+    </div>
+
+    <div id="createUserPage" style="display: none;">
+        <h2>Create User</h2>
+        <input type="text" id="newUsername" placeholder="NewUsername" required><br>
+        <input type="password" id="newPassword" placeholder="NewPassword"><br>
+
+        <button onclick="createUser()" id="login">Create User</button><br>
+        <button onclick="showLogin()" id="create">Back to login</button>
+
+    </div>
+</body>
+</html>
